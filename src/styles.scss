@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+.micro-container{
+    position: relative;
+    display: flex;
+    padding: 30px;
+    justify-content: space-around;
+    border: 2px solid black;
+}
+
+.type-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+}

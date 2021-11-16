@@ -33,7 +33,12 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/MicroFrontendDemo/polyfills.js",
+              "src/assets/MicroFrontendDemo/main.js",
+              "src/assets/MicroApp2/polyfills.js",
+              "src/assets/MicroApp2/main.js"
+            ]
           },
           "configurations": {
             "production": {
