@@ -7,6 +7,7 @@ import { MicroApp1Component } from './micro-app1/micro-app1.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { createCustomElement } from '@angular/elements';
 import { MicroApp2Component } from './micro-app2/micro-app2.component';
+import { MicroAppLazyLoadingComponent } from './micro-app-lazy-loading/micro-app-lazy-loading.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ export class AppModule implements DoBootstrap{
   }
 
   ngDoBootstrap(appRef: ApplicationRef): void {
-    const microApp2 = createCustomElement(MicroApp2Component, {injector: this.injector});
-    customElements.define('app-two', microApp2);    
+    const microAppLazyLoading = createCustomElement(MicroAppLazyLoadingComponent, {injector: this.injector});
+    customElements.define('app-lazy-loading', microAppLazyLoading);    
   }
 }

@@ -2,4 +2,6 @@
     <label class="type-label">In Angular Micro-Frontend</label>
     <app-one></app-one>
     <app-two input="TestInput"></app-two>
+    <app-lazy-loading *ngIf="isApp3Loaded"></app-lazy-loading>
 </div>
+<button (click)="onLazyLoadBtnClicked()">Lazy Load App 3</button>
