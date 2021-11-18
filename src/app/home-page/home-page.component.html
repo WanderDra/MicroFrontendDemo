@@ -4,4 +4,9 @@
     <app-two input="TestInput"></app-two>
     <app-lazy-loading *ngIf="isApp3Loaded"></app-lazy-loading>
 </div>
+<div class="broadcast-container">
+    <textarea t class="broadcast-input" type="text" (change)="onInputChange()" [(ngModel)]="inputVal"></textarea>
+    <app-data-sharing [broadcast]="broadcastSub$"></app-data-sharing>
+    <app-micro-app-broadcast [broadcast]="broadcastSub$"></app-micro-app-broadcast>
+</div>
 <button (click)="onLazyLoadBtnClicked()">Lazy Load App 3</button>
